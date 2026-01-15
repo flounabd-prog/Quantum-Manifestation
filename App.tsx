@@ -3,10 +3,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Sparkles, Brain, History, ArrowLeft, Send, CheckCircle, Zap, Loader2, Home, X, LayoutGrid, Target, Infinity, Eye, Waves, Share2 } from 'lucide-react';
 import { AppState, Intention, RefinementResult } from './types.ts';
 import { refineIntention, generateIntentionImage } from './geminiService.ts';
-import QuantumCanvas from './components/QuantumCanvas.tsx';
-import { QuantumAudio, playQuantumPing, playAnchoringSound } from './components/QuantumAudio.tsx';
-import QuantumBurst from './components/QuantumBurst.tsx';
-import { QuantumFocusVisualizer } from './components/QuantumFocusVisualizer.tsx';
+import QuantumCanvas from './QuantumCanvas.tsx';
+import { QuantumAudio, playQuantumPing, playAnchoringSound } from './QuantumAudio.tsx';
+import QuantumBurst from './QuantumBurst.tsx';
+import { QuantumFocusVisualizer } from './QuantumFocusVisualizer.tsx';
 
 const QUANTUM_MESSAGES = [
   "رصد تراكب الاحتمالات في الحقل الموحد...",
